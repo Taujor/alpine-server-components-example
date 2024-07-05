@@ -1,0 +1,23 @@
+{
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules",
+      ".sh"
+    ],
+    "verbose": true,
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "watch": [
+      "./**/*",
+      "./**"
+    ],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js css mjs cjs",
+    "events": {
+      "restart": "./refresh.sh"
+    }
+}
